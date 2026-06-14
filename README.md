@@ -50,7 +50,10 @@ These findings suggest that while acquisition efforts are generating a healthy v
 
 The activation funnel revealed a steady decline in user retention as players progressed through the onboarding journey. Of the **50,000 users acquired during Q1 2024**, **81.4% opened the application**, indicating strong initial interest following installation. However, retention decreased substantially at subsequent stages, with only **49.5% of acquired users completing signup**, **35.5% completing the tutorial**, and **27.3% ultimately reaching level completion**.
 
-<img src="visuals/activation.png" width="50%">
+<p align="center">
+  <img src="visuals/activation.png" alt="Activation" width="200%">
+</p>
+
 
 These figures indicate that nearly half of all acquired users disengaged before completing the signup process, while almost three-quarters failed to reach a level completion milestone. As users progress deeper into the onboarding journey, each stage introduces additional friction that gradually reduces the active player base.
 
@@ -64,7 +67,9 @@ The monetization funnel examined how effectively acquired users progressed from 
 
 Only **22.8% of acquired users were exposed to a rewarded advertisement**, indicating that a portion of engaged players never encountered a monetization opportunity. Retention decreased further at the final stage, where only **11.2% of all acquired users successfully claimed a reward after viewing an advertisement**.
 
-<img src="visuals/monetization.png" width="50%">
+<p align="center">
+  <img src="visuals/monetization.png" alt="Monetization" width="200%">
+</p>
 
 Viewed from an acquisition perspective, this means that nearly **89% of acquired users failed to reach the final monetization stage**. Although user acquisition efforts successfully generated 50,000 installs during the quarter, only **5,618 users ultimately progressed through the complete monetization journey**.
 
