@@ -50,6 +50,8 @@ These findings suggest that while acquisition efforts are generating a healthy v
 
 The activation funnel revealed a steady decline in user retention as players progressed through the onboarding journey. Of the **50,000 users acquired during Q1 2024**, **81.4% opened the application**, indicating strong initial interest following installation. However, retention decreased substantially at subsequent stages, with only **49.5% of acquired users completing signup**, **35.5% completing the tutorial**, and **27.3% ultimately reaching level completion**.
 
+<img src="/visuals/activation" width="50%">
+
 These figures indicate that nearly half of all acquired users disengaged before completing the signup process, while almost three-quarters failed to reach a level completion milestone. As users progress deeper into the onboarding journey, each stage introduces additional friction that gradually reduces the active player base.
 
 The largest decline in retained users occurred between App Open and Signup Completion, where the funnel dropped from **81.4% to 49.5% of acquired users**. This represents a loss of nearly one-third of the original user base before players fully entered the game experience. Such a significant reduction suggests that the signup process may be creating unnecessary barriers that discourage users from continuing their journey.
