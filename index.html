@@ -1,106 +1,317 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mobile Game Funnel & Monetization Analysis</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project Title Here</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=DM+Serif+Display&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
 
-```
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #ffffff;
+      color: #1a1a2e;
+    }
 
-<link rel="stylesheet" href="style.css">
-```
+    /* NAV */
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(255,255,255,0.95);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid #e2e8f0;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 48px; height: 58px;
+    }
+    .nav-title {
+      font-size: 13px; font-weight: 600; color: #1a3a5c;
+    }
+    .nav-links {
+      display: flex; gap: 2px; list-style: none;
+    }
+    .nav-links a {
+      font-size: 13px; font-weight: 400; color: #64748b;
+      text-decoration: none; padding: 6px 14px; border-radius: 6px;
+      transition: background 0.15s, color 0.15s;
+    }
+    .nav-links a:hover,
+    .nav-links a.active { background: #f1f5f9; color: #1a3a5c; }
+    .nav-repo {
+      font-size: 13px; font-weight: 500; color: #1a3a5c;
+      text-decoration: none; border: 1px solid #cbd5e1;
+      padding: 6px 16px; border-radius: 7px;
+      display: flex; align-items: center; gap: 7px;
+      transition: background 0.15s;
+    }
+    .nav-repo:hover { background: #f8fafc; }
+    .nav-repo svg { width: 14px; height: 14px; flex-shrink: 0; }
 
+    /* HERO */
+    .hero {
+      max-width: 860px; margin: 0 auto;
+      padding: 80px 48px 64px;
+      border-bottom: 1px solid #e2e8f0;
+    }
+    .hero-eyebrow {
+      font-size: 12px; font-weight: 500; color: #2563EB;
+      letter-spacing: 0.08em; text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+    .hero-title {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(30px, 4vw, 46px);
+      line-height: 1.2; color: #1a3a5c;
+      margin-bottom: 20px;
+    }
+    .hero-desc {
+      font-size: 15px; line-height: 1.75; color: #64748b;
+      max-width: 620px;
+      /* ↓ YOUR PROJECT TAGLINE HERE */
+    }
+
+    /* SECTIONS */
+    .section {
+      max-width: 860px; margin: 0 auto;
+      padding: 64px 48px;
+      border-bottom: 1px solid #e2e8f0;
+    }
+    .section-eyebrow {
+      font-size: 11px; font-weight: 600; color: #2563EB;
+      letter-spacing: 0.09em; text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+    .section-title {
+      font-family: 'DM Serif Display', serif;
+      font-size: 26px; color: #1a3a5c;
+      margin-bottom: 28px; line-height: 1.3;
+    }
+
+    /* Dashboard embed */
+    .embed-shell {
+      border: 1px solid #e2e8f0;
+      border-radius: 10px; overflow: hidden;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+    }
+    .embed-bar {
+      background: #f8fafc; border-bottom: 1px solid #e2e8f0;
+      padding: 11px 16px;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .embed-dots { display: flex; gap: 6px; }
+    .embed-dots span { width: 10px; height: 10px; border-radius: 50%; }
+    .embed-dots span:nth-child(1) { background: #fca5a5; }
+    .embed-dots span:nth-child(2) { background: #fcd34d; }
+    .embed-dots span:nth-child(3) { background: #86efac; }
+    .embed-badge {
+      font-size: 11px; font-weight: 600; color: #2563EB;
+      background: #eff6ff; padding: 3px 10px; border-radius: 20px;
+    }
+    /* ↓ PASTE YOUR POWER BI EMBED <iframe> INSIDE .embed-body */
+    .embed-body {
+      width: 100%; min-height: 600px;
+      background: #f8fafc;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .embed-body iframe {
+      width: 100%; height: 600px; border: none; display: block;
+    }
+    .embed-placeholder {
+      text-align: center; padding: 60px 20px;
+    }
+    .embed-placeholder p {
+      font-size: 13px; color: #94a3b8; margin-top: 8px; line-height: 1.6;
+    }
+    .embed-placeholder code {
+      font-size: 12px; background: #e2e8f0; padding: 2px 7px; border-radius: 4px;
+    }
+
+    /* Text content area */
+    .content-area {
+      font-size: 15px; line-height: 1.8; color: #475569;
+      /* ↓ YOUR PARAGRAPH TEXT GOES HERE — paste inside the <div class="content-area"> in the HTML */
+    }
+    .content-area p + p { margin-top: 16px; }
+
+    /* Repo section */
+    .repo-card {
+      border: 1px solid #e2e8f0; border-radius: 10px;
+      padding: 32px 36px;
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 24px;
+    }
+    .repo-card-text h3 {
+      font-size: 16px; font-weight: 600; color: #1a3a5c; margin-bottom: 6px;
+    }
+    .repo-card-text p {
+      font-size: 13px; color: #64748b; line-height: 1.6;
+      /* ↓ YOUR REPO DESCRIPTION HERE */
+    }
+    .repo-btn {
+      display: flex; align-items: center; gap: 8px; flex-shrink: 0;
+      font-size: 14px; font-weight: 600; color: #fff;
+      background: #1a3a5c; text-decoration: none;
+      padding: 11px 22px; border-radius: 8px;
+      transition: background 0.15s;
+      white-space: nowrap;
+    }
+    .repo-btn:hover { background: #2563EB; }
+    .repo-btn svg { width: 16px; height: 16px; }
+
+    /* FOOTER */
+    footer {
+      max-width: 860px; margin: 0 auto;
+      padding: 32px 48px;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    footer p { font-size: 12px; color: #94a3b8; }
+
+    @media (max-width: 640px) {
+      nav { padding: 0 20px; }
+      .nav-links { display: none; }
+      .hero, .section { padding: 48px 24px; }
+      .repo-card { flex-direction: column; align-items: flex-start; }
+      footer { padding: 28px 24px; flex-direction: column; gap: 8px; }
+    }
+  </style>
 </head>
-
 <body>
 
-```
-<main class="container">
+<!-- ── NAV ── -->
+<nav>
+  <!-- ↓ YOUR PROJECT SHORT NAME -->
+  <span class="nav-title">Analytics Dashboard</span>
 
-    <section class="hero">
+  <ul class="nav-links">
+    <li><a href="#dashboard">Dashboard</a></li>
+    <li><a href="#executive-summary">Executive Summary</a></li>
+    <li><a href="#project-overview">Project Overview</a></li>
+    <li><a href="#repo">Repo</a></li>
+  </ul>
 
-        <p class="eyebrow">Q1 2024 Product Analytics Case Study</p>
+  <!-- ↓ REPLACE # WITH YOUR GITHUB URL -->
+  <a href="#" target="_blank" class="nav-repo">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+    </svg>
+    GitHub
+  </a>
+</nav>
 
-        <h1>
-            Mobile Game Funnel &
-            Monetization Analysis
-        </h1>
 
-        <p class="subtitle">
-            Analyzing user progression, retention bottlenecks, and monetization
-            opportunities across 50,000 acquired users.
-        </p>
+<!-- ── HERO ── -->
+<div class="hero">
+  <!-- ↓ REPLACE with your category / subtitle -->
+  <div class="hero-eyebrow">Power BI · Funnel Analytics</div>
 
-    </section>
+  <!-- ↓ REPLACE with your project title -->
+  <h1 class="hero-title">User Journey & Monetization Analytics Dashboard</h1>
 
-    <section class="section">
+  <!-- ↓ REPLACE with 1–2 sentence description of the project -->
+  <p class="hero-desc">
+    Your project description goes here. Write one or two sentences explaining what this dashboard does and who it's for.
+  </p>
+</div>
 
-        <h2>Dashboard</h2>
 
-        <div class="dashboard-wrapper">
+<!-- ── 1. DASHBOARD ── -->
+<section class="section" id="dashboard">
+  <div class="section-eyebrow">01 — Dashboard</div>
+  <h2 class="section-title">Live Power BI Dashboard</h2>
 
-            <iframe
-                src="https://app.powerbi.com/view?r=eyJrIjoiM2M2ZWRhNDgtOTUxMy00YjE1LWIyMTEtZGNhNzk5ZDU4OTBjIiwidCI6ImUxNGU3M2ViLTUyNTEtNDM4OC04ZDY3LThmOWYyZTJkNWE0NiIsImMiOjEwfQ%3D%3D" frameborder="0" allowFullScreen="true">
-                title="Power BI Dashboard"
-                frameborder="0"
-                allowfullscreen>
-            </iframe>
+  <div class="embed-shell">
+    <div class="embed-bar">
+      <div class="embed-dots"><span></span><span></span><span></span></div>
+      <span class="embed-badge">Power BI</span>
+    </div>
+    <div class="embed-body">
+      <!--
+        ════════════════════════════════════════
+        STEP 1: Delete the <div class="embed-placeholder"> block below
+        STEP 2: Paste your Power BI iframe here, e.g.:
+        <iframe src="YOUR_EMBED_URL" allowFullScreen="true"></iframe>
+        ════════════════════════════════════════
+      -->
+      <div class="embed-placeholder">
+        <p>Paste your Power BI embed <code>&lt;iframe&gt;</code> here.<br/>
+        Get the URL from Power BI → <code>File → Embed Report → Website or portal</code></p>
+      </div>
+    </div>
+  </div>
+</section>
 
-        </div>
 
-    </section>
+<!-- ── 2. EXECUTIVE SUMMARY ── -->
+<section class="section" id="executive-summary">
+  <div class="section-eyebrow">02 — Executive Summary</div>
+  <h2 class="section-title">Executive Summary</h2>
 
-    <section class="section">
+  <div class="content-area">
+    <!-- ↓ PASTE YOUR EXECUTIVE SUMMARY PARAGRAPHS HERE -->
+    <p>Your executive summary goes here. Paste your paragraph text directly inside this div. You can add as many &lt;p&gt; tags as you need.</p>
+    <p>Additional paragraph goes here.</p>
+  </div>
+</section>
 
-        <h2>Executive Summary</h2>
 
-        <p>
-            During Q1 2024, the game acquired 50,000 new users, providing an opportunity
-            to evaluate how effectively players progressed from acquisition through
-            activation, engagement, and monetization.
-        </p>
+<!-- ── 3. PROJECT OVERVIEW ── -->
+<section class="section" id="project-overview">
+  <div class="section-eyebrow">03 — Project Overview</div>
+  <h2 class="section-title">Project Overview</h2>
 
-        <p>
-            While 81.4% of installers opened the application, only 49.5% completed signup
-            and 27.3% reached level completion. Monetization analysis further revealed
-            that only 11.2% of acquired users ultimately reached the rewarded-ad claim stage.
-        </p>
+  <div class="content-area">
+    <!-- ↓ PASTE YOUR PROJECT OVERVIEW PARAGRAPHS HERE -->
+    <p>Your project overview goes here. Describe the data sources, methodology, tools used, and what problem this dashboard solves.</p>
+    <p>Additional paragraph goes here.</p>
+  </div>
+</section>
 
-    </section>
 
-    <section class="section">
+<!-- ── 4. REPO ── -->
+<section class="section" id="repo">
+  <div class="section-eyebrow">04 — Repository</div>
+  <h2 class="section-title">GitHub Repository</h2>
 
-        <h2>Project Overview</h2>
+  <div class="repo-card">
+    <div class="repo-card-text">
+      <!-- ↓ REPLACE with your repo name and description -->
+      <h3>your-repo-name</h3>
+      <p>A short description of what's inside the repository — data files, Power BI report, documentation, or anything else worth mentioning.</p>
+    </div>
+    <!-- ↓ REPLACE # WITH YOUR GITHUB REPO URL -->
+    <a href="#" target="_blank" class="repo-btn">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+      </svg>
+      View on GitHub
+    </a>
+  </div>
+</section>
 
-        <p>
-            As part of the Q1 2024 product performance review, this analysis evaluates
-            how newly acquired users progressed through the mobile game's lifecycle,
-            from installation and onboarding to engagement and monetization.
-        </p>
 
-        <p>
-            Using behavioral event data from 50,000 users, the project identifies
-            retention bottlenecks, evaluates monetization effectiveness, and uncovers
-            opportunities to improve player experience and business performance.
-        </p>
+<!-- ── FOOTER ── -->
+<footer>
+  <!-- ↓ REPLACE with your name / team -->
+  <p>Built by [Your Name] · [Year]</p>
+  <p>Power BI · Data Analytics</p>
+</footer>
 
-    </section>
 
-    <section class="section repository">
-
-        <a href="YOUR_GITHUB_REPO_LINK" target="_blank">
-            View GitHub Repository
-        </a>
-
-    </section>
-
-</main>
-```
+<script>
+  // Active nav link on scroll
+  const sections = document.querySelectorAll('section[id]');
+  const links = document.querySelectorAll('.nav-links a');
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        links.forEach(a => a.classList.remove('active'));
+        const a = document.querySelector(`.nav-links a[href="#${e.target.id}"]`);
+        if (a) a.classList.add('active');
+      }
+    });
+  }, { threshold: 0.5 });
+  sections.forEach(s => obs.observe(s));
+</script>
 
 </body>
-
 </html>
