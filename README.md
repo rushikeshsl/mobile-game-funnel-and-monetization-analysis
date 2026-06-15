@@ -53,7 +53,7 @@ Two key funnels were defined to evaluate user progression across the product:
 **Activation Funnel**
 
 <p align="center">
-  <img src="visuals/activation_flow.png" alt="Activation Flowchart" width="60%">
+  <img src="visuals/activation_flow.png" alt="Activation Flowchart" width="75%">
 </p>
 
 * App Install
