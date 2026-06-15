@@ -56,21 +56,11 @@ Two key funnels were defined to evaluate user progression across the product:
   <img src="visuals/activation_flow.png" alt="Activation Flowchart" width="90%">
 </p>
 
-* App Install
-* App Open
-* Signup Complete
-* Tutorial Complete
-* Level Complete
-
 **Monetization Funnel**
 
 <p align="center">
   <img src="visuals/monetization_flow.png" alt="Monetization Flowchart" width="60%">
 </p>
-
-* Level Complete
-* Ad Impression
-* Ad Reward Claimed
 
 For each stage, unique users were counted and conversion rates were calculated relative to the initial install population to measure user retention throughout the journey.
 
@@ -89,6 +79,13 @@ This segmentation enabled comparison of engagement, retention, and monetization 
 SQL was used to calculate funnel metrics, conversion rates, drop-off rates, and segment-level performance indicators. The resulting outputs were integrated into an interactive Power BI dashboard to provide a consolidated view of acquisition, activation, engagement, and monetization performance.
 
 The dashboard was designed to support both executive-level monitoring and deeper investigation of user progression through the funnel, enabling identification of retention bottlenecks and monetization opportunities.
+
+### Tools & Technologies
+
+- SQL
+- Power BI
+- Excel
+- GitHub Pages
 
 # Insights Deep Dive
 
