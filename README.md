@@ -8,6 +8,10 @@
 
 During **Q1 2024**, the game acquired **50,000 new users**, providing an opportunity to evaluate how effectively players progressed from acquisition through activation, engagement, and monetization. This analysis was conducted to identify performance bottlenecks across the user journey and highlight opportunities to improve player retention and revenue generation.
 
+<p align="center">
+  <img src="visuals/executive_chart.png" alt="Executive" width="75%">
+</p>
+
 User acquisition remained strong throughout the quarter; however, funnel performance revealed significant losses during onboarding. While **81.4% of installers opened the application**, only **49.5% completed signup**, making the onboarding process the largest source of user attrition. By the end of the activation journey, only **27.3% of acquired users reached level completion**, indicating substantial engagement leakage before users experienced the game's core value.
 
 Monetization analysis showed further opportunities for improvement. Of the users who completed a level, **22.8% were exposed to a rewarded advertisement**, while only **11.2% of all acquired users ultimately claimed a reward**. These findings suggest that both ad exposure and reward-claim participation can be optimized to increase monetization efficiency.
