@@ -87,6 +87,30 @@ The dashboard was designed to support both executive-level monitoring and deeper
 - Excel
 - GitHub Pages
 
+# Analysis
+
+The project utilized SQL to perform the following analyses:
+
+* Activation Funnel Analysis
+* Monetization Funnel Analysis
+* Channel Performance Analysis
+* Device Performance Analysis
+* Country Performance Analysis
+
+**SQL File:** [View SQL Queries](sql/query.sql)
+
+The project utilized Power BI to perform the following analyses:
+
+* Executive KPI Tracking
+* Activation Funnel Visualization
+* Monetization Funnel Visualization
+* Acquisition Channel Performance
+* Device Performance Analysis
+* Cumulative Drop-off Analysis
+  
+**Dashboard File:** [View Dashboard](dashboard/dashboard.pbix)
+
+
 # Insights Deep Dive
 
 ## 1. User Acquisition & Top-Level Funnel Performance
