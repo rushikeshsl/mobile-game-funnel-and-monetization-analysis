@@ -40,6 +40,48 @@ The analysis was conducted using a user-level event dataset containing activity 
 
 6. Generate data-driven recommendations to improve user retention, engagement, and monetization efficiency.
 
+# Methodology
+
+The analysis was conducted using a user-level event dataset containing behavioral activity from 50,000 users acquired during Q1 2024. The objective was to evaluate how effectively users progressed through the mobile game's lifecycle, from acquisition and onboarding to engagement and monetization.
+
+The analytical approach consisted of three stages:
+
+### 1. Funnel Construction
+
+Two key funnels were defined to evaluate user progression across the product:
+
+**Activation Funnel**
+
+* App Install
+* App Open
+* Signup Complete
+* Tutorial Complete
+* Level Complete
+
+**Monetization Funnel**
+
+* Level Complete
+* Ad Impression
+* Ad Reward Claimed
+
+For each stage, unique users were counted and conversion rates were calculated relative to the initial install population to measure user retention throughout the journey.
+
+### 2. Segmentation Analysis
+
+User behavior was analyzed across key dimensions including:
+
+* Acquisition Channel
+* Device Type
+* Country
+
+This segmentation enabled comparison of engagement, retention, and monetization performance across different user groups and traffic sources.
+
+### 3. Dashboard Development
+
+SQL was used to calculate funnel metrics, conversion rates, drop-off rates, and segment-level performance indicators. The resulting outputs were integrated into an interactive Power BI dashboard to provide a consolidated view of acquisition, activation, engagement, and monetization performance.
+
+The dashboard was designed to support both executive-level monitoring and deeper investigation of user progression through the funnel, enabling identification of retention bottlenecks and monetization opportunities.
+
 # Insights Deep Dive
 
 ## 1. User Acquisition & Top-Level Funnel Performance
