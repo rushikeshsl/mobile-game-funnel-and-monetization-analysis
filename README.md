@@ -161,3 +161,30 @@ Channel and device analyses revealed that user quality varies across segments. W
 
 Overall, the findings indicate that improving onboarding conversion, increasing rewarded-ad participation, and prioritizing high-quality user segments are likely to generate the greatest impact on retention, engagement, and revenue growth.
 
+# Recommendations
+
+Based on the findings from the activation and monetization funnels, the following actions are recommended to improve user retention, engagement, and monetization performance:
+
+### 1. Reduce Friction in the Signup Process
+
+The largest decline in user retention occurs between **App Open (81.4%)** and **Signup Completion (49.5%)**, indicating that many users abandon the journey before fully entering the game. Simplifying registration requirements, introducing social sign-in options, or allowing guest play may help increase onboarding completion rates.
+
+### 2. Improve Early-Stage Player Engagement
+
+Only **35.5% of acquired users complete the tutorial** and **27.3% reach level completion**, suggesting that many users fail to experience the game's core value proposition. Optimizing tutorial design, shortening onboarding flows, and accelerating access to gameplay could improve early engagement and retention.
+
+### 3. Increase Rewarded-Ad Participation
+
+While **22.8% of acquired users are exposed to a rewarded advertisement**, only **11.2% progress to the reward-claim stage**. Experimenting with ad placement, reward value, and timing may encourage greater participation and improve monetization efficiency among engaged users.
+
+### 4. Prioritize High-Quality Acquisition Channels
+
+Although Organic acquisition contributes the largest share of engaged users, **App Store Search users demonstrate the highest monetization rate and longest average session duration**. Future acquisition investments should be evaluated using downstream engagement and monetization metrics rather than acquisition volume alone.
+
+### 5. Implement Platform-Specific Optimization Strategies
+
+Android users generate higher engagement volume, while iOS users exhibit stronger monetization behavior and longer session durations. Investigating platform-specific differences in onboarding, gameplay experience, and monetization interactions may help improve performance across both user segments.
+
+### 6. Focus on Retention Before Scaling Acquisition
+
+The analysis indicates that a large proportion of acquired users disengage before reaching engagement and monetization milestones. Improving onboarding conversion and user retention is likely to generate a greater return on investment than increasing acquisition spend alone, as more existing users would progress through the funnel and contribute to revenue generation.
