@@ -52,6 +52,10 @@ Two key funnels were defined to evaluate user progression across the product:
 
 **Activation Funnel**
 
+<p align="center">
+  <img src="visuals/activation_flow.png" alt="Activation Flowchart" width="60%">
+</p>
+
 * App Install
 * App Open
 * Signup Complete
@@ -59,6 +63,10 @@ Two key funnels were defined to evaluate user progression across the product:
 * Level Complete
 
 **Monetization Funnel**
+
+<p align="center">
+  <img src="visuals/monetization_flow.png" alt="Monetization Flowchart" width="60%">
+</p>
 
 * Level Complete
 * Ad Impression
