@@ -1,4 +1,4 @@
--- user_id,
+--  user_id,
 --	event,
 --	timestamp,
 --	country,
@@ -17,7 +17,7 @@
 
 CREATE TABLE funnel_data AS
 SELECT *
-FROM read_csv_auto("C:\Users\Rushikesh\Downloads\gaming_funnel_dataset.csv")
+FROM read_csv_auto("data/gaming_funnel_dataset.csv")
 ;
 
 
@@ -204,7 +204,6 @@ ORDER BY
     f.country,
     f.channel,    
     f.stage_order;
-
 
 
 
